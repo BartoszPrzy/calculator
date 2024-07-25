@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 95%);
+}
+
+
+.calculator {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+
+.display {
+  width: 100%;
+  padding: 20px;
+  font-size: 60px;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 26%);
+  color: white;
+}
+
+
+button {
+  width: 80px;
+  height: 80px;
+  border-radius: 30px;
+  border: none;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+button:active {
+  background-color: hsl(0, 0%, 50%);
+}
+
+
+.del {
+  font-size: 30px;
+  grid-column-start: 4;
+  background-color: hsl(35, 100%, 55%);
+}
+.del:hover {
+  background-color: hsl(35, 100%, 65%);
+}
+.del:active {
+  background-color: hsl(35, 100%, 75%);
+}
+
+
+.clearCalc {
+  grid-column-start: 3;
+  background-color: hsl(35, 100%, 55%);
+}
+.clearCalc:hover {
+  background-color: hsl(35, 100%, 65%);
+}
+.clearCalc:active {
+  background-color: hsl(35, 100%, 75%);
+}
